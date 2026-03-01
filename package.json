@@ -1,0 +1,37 @@
+{
+  "name": "aicraft-desktop",
+  "version": "1.0.0",
+  "description": "Desktop executable wrapper for Gemini-craft.html",
+  "main": "main.js",
+  "author": "AIcraft",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:portable": "electron-builder --win portable",
+    "dist:nsis": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aicraft.desktop",
+    "productName": "AIcraft",
+    "files": [
+      "main.js",
+      "Gemini-craft.html"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+  }
+}
