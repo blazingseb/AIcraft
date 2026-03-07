@@ -21,7 +21,8 @@
     "productName": "AIcraft",
     "files": [
       "main.js",
-      "Gemini-craft.html"
+      "index.html",
+      "assets/**/*"
     ],
     "directories": {
       "output": "dist"
