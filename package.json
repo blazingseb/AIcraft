@@ -22,6 +22,8 @@
     "files": [
       "main.js",
       "index.html",
+      "stronghold_schems_data.js",
+      "ruined_portal_schems_data.js",
       "assets/**/*"
     ],
     "directories": {
